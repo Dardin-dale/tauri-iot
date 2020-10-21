@@ -12,7 +12,7 @@
     "tauri": "^0.12.0"
   },
   "scripts": {
-    "start": "yarn tauri dev",
+    "start": "cross-env BROWSER=none yarn tauri dev",
     "build": "react-scripts build",
     "bundle": "react-scripts build && tauri build",
     "test": "react-scripts test",
@@ -37,5 +37,8 @@
   "main": "index.js",
   "repository": "git@github.com:Dardin-dale/tauri-iot.git",
   "author": "Logan Crecraft <logandalec@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
 }
